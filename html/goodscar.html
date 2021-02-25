@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>购物车</title>
+  <link rel="stylesheet" href="../js/libs/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/car.min.css">
+  <link rel="shortcut icon" href="../img/favicon.ico" />
+  <script src="../js/libs/jquery-3.5.1/jquery-3.5.1.min.js"></script>
+  <script src="../js/libs/cookie.js"></script>
+  <script src="../js/libs/jquery-3.5.1/ajax.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                <label class="checkbox-inline">
+                    <input type="checkbox" value="option1" class="allcheck"> 全选
+                </label>
+                <div class="panel_right">
+                  <a href="../index.html" style="margin-right: 50px;">首页</a>
+                    <a href="#" style="margin-right: 50px;">商品种类<span id="typegoods" class="badge"></span></a>
+                    <a href="#">商品数量<span id="totalnumber" class="badge"></span></a>
+                </div>
+            </h3>
+        </div>
+<div class="panel-body">
+            <div class="media">
+                <div class="media-left">
+                    <a href="#" class="media_left">
+                        <input type="checkbox">
+                        <img class="media-object" style="width: 100px;"
+                            src="https://image5.suning.cn/uimg/b2c/newcatentries/0070081143-000000000144879464_2_800x800.jpg"
+                            alt="...">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <div class="media_body_center">
+                        <div class="btn-group" role="group" aria-label="...">
+                            <button type="button" class="btn btn-default">-</button>
+                            <button type="button" class="btn btn-default">1</button>
+                            <button type="button" class="btn btn-default">+</button>
+                        </div>
+                    </div>
+                    <div class="media_body_right">
+                        <span>总价：￥23</span>
+                        <span class="glyphicon glyphicon-remove del"></span>
+                    </div>
+                </div>
+            </div>
+</div>
+        <div class="panel-footer">
+        <span class="setlement"></span>
+            <button class="btn btn-info setlet">结算</button>
+        </div>
+    </div>
+</div>
+<script src="../js/views/goodscar.js"></script>
+</body>
+</html>
