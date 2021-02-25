@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+#title {
+  width: 100%;
+  height: 120px;
+
+  .title {
+    height: 100%;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+    #left_title {
+      width: 200px;
+      float: left;
+    }
+
+    #mid_title {
+      margin-left: 30px;
+      height: 100px;
+
+      .smaspan {
+        margin-left: 20px;
+
+        li {
+          width: 120px;
+          height: 20px;
+          font-size: 5px;
+        }
+      }
+
+      .navbar-form {
+        margin-top: 20px;
+      }
+
+      .midinput {
+        width: 500px;
+      }
+    }
+
+    #right_title {
+      margin-left: 20px;
+
+      p {
+        font-size: 10px;
+      }
+
+      img {
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+nav {
+  width: 100%;
+  background-color: #FF8D00;
+  height: 30px;
+
+  #nav {
+    height: 100%;
+    width: 1000px;
+    margin: auto;
+
+    span {
+      float: left;
+      height: 100%;
+      width: 180px;
+      text-align: center;
+      font-size: 17px;
+      line-height: 30px;
+      color: white;
+      background-color: #FF5000;
+      font-weight: 900;
+    }
+
+    ul {
+      float: left;
+      display: flex;
+      width: 600px;
+      height: 100%;
+
+      li {
+        float: left;
+        height: 100%;
+        line-height: 30px;
+        flex: 1;
+        text-align: center;
+        color: white;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #f02d0b;
+        }
+      }
+
+    }
+
+  }
+}
+
+.swiper-contione {
+  width: 700px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  top: -10px;
+}
+
+.swiper {
+  width: 9999999px;
+  height: 400px;
+  transition: all 1s ease;
+}
+
+.swiper-item {
+  width: 700px;
+  height: 400px;
+  float: left;
+  position: relative;
+}
+
+.swiper-item img {
+  width: 700px;
+  height: 400px;
+}
+
+.swiper-item p {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.swiper-point {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.point {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.9);
+  margin-right: 5px;
+  float: left;
+}
+
+.point.active {
+  background: #fff;
+}
+
+.swiper-left {
+  width: 60px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+.swiper-right {
+  width: 60px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+.swiper-left img,
+.swiper-right img {
+  cursor: pointer;
+}
+
+.swiper-contione:hover .swiper-left {
+  left: 0;
+}
+
+.swiper-contione:hover .swiper-right {
+  right: 0;
+}
+
+#contont {
+  width: 100%;
+
+  .contont {
+    position: relative;
+    width: 1200px;
+    margin: auto;
+    height: 400px;
+  }
+}
+
+#login {
+  width: 500px;
+  height: 400px;
+  background-image: url(../img/bag1.jpg);
+  background-size: 100% 112%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 2px gray solid;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+
+  .logintto {
+    width: 200px;
+  }
+
+  h3 {
+    margin-top: 60px;
+  }
+
+  .btnx {
+    background-color: orange;
+  }
+
+  .btny {
+    background-color: orangered;
+  }
+
+  h2 {
+    margin-top: 30px;
+  }
+
+  .btnz {
+    float: left;
+    background-color: yellow;
+    margin-left: 100px;
+  }
+
+  .btnc {
+    float: left;
+    background-color: yellowgreen;
+    margin-left: 150px;
+  }
+
+  #biglogin {
+    display: none;
+  }
+}
+
+#goods {
+  width: 100%;
+  .goods {
+    width: 1200px;
+    margin: auto;
+    section {
+      margin: 20px 0;
+    }
+    span {
+      font-size: 20px;
+      color: gray;
+    }
+    .goods_img {
+      width: 150px;
+    }
+    h5{
+      text-overflow: ellipsis;
+      overflow: hidden;    
+      white-space: nowrap;
+    }
+    h6{
+      text-align: right;
+    }
+    .goods_footimg{
+      margin-top: 10px;
+    }
+    a{
+      color: saddlebrown;
+      &:hover{
+        color: red;
+      }
+    }
+  }
+}
+#hot_goods{
+  width: 100%;
+  margin-top: 30px;
+  .hot_goods{
+    width: 1200px;
+    margin: auto;
+    section{
+      img{
+        height: 30px;
+      }
+      #hotimg{
+        height: 80px;
+      }
+      }
+      #hotitem{
+        width: 100%;
+        a{
+          color: gray;
+          &:hover{
+            figure{
+              border: 2px solid orangered;
+            }
+          }
+        figure{
+          position: relative;
+          height: 400px;
+          padding-left: 15px;
+          padding-top: 15px;
+          width: 20%;
+          border: 2px solid transparent;
+          .goods_img{
+            width: 200px;
+          }
+          .iteminfo{
+            position: absolute;
+            bottom: 60px;
+            width: 100%;
+            margin-top: 20px;
+            .price{
+              font-size: 20px;
+              color: red;
+            }
+            .lateprice{
+              color: gray;
+              text-decoration: line-through;
+            }
+          }
+          .sell_info{
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            right: 5px;
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
+#footer {
+  font-size: 12px;
+  width: 100%;
+  margin-top: 30px;
+  .footer {
+    width: 1200px;
+    margin: auto;
+  }
+
+  a {
+    color: gray;
+    &:hover {
+      color: orangered;
+      text-decoration: none;
+    }
+  }
+
+  .tb-footer-hd p {
+    margin-bottom: 8px;
+    line-height: 27px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .tb-footer b {
+    margin: 0 3px;
+    font-weight: 400;
+    color: #ddd;
+  }
+}
+
+.tb-footer .tb-footer-mod {
+  background-image: url(https://img.alicdn.com/tfs/TB1EPnIQXXXXXaSXpXXXXXXXXXX-1133-35.jpg);
+}
+
+.tb-footer .tb-footer-mod {
+  height: 40px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.tb-footer span {
+  margin: 0 4px;
+}
